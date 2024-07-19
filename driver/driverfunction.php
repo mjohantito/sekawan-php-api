@@ -83,7 +83,7 @@ function storeDriver($driverInput){
     }elseif(empty(trim($driverstatus))){
         return error422('Enter Driver Status');
     }else{
-        $query = "INSERT INTO driver(driverid, drivername, driverage, drivertatus) VALUES (
+        $query = "INSERT INTO driver(driverid, drivername, driverage, driverstatus) VALUES (
             UPPER('$driverid'),
             UPPER('$drivername'),
             CAST('$driverage' AS UNSIGNED),
